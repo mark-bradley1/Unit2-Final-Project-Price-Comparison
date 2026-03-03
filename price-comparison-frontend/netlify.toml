@@ -1,0 +1,4 @@
+[build]
+    base = "Grocery-Price-Comparison"
+    command = "npm run build"
+    publish = "dist"

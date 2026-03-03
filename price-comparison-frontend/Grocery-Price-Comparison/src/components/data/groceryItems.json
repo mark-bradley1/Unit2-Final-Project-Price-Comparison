@@ -1,0 +1,911 @@
+[
+  {
+    "id": 1,
+    "name": "Apples (1 lb)",
+    "category": "Produce",
+    "Schnucks": 1.99,
+    "Dierbergs": 1.79,
+    "Kroger": 2.09,
+    "image": "/images/apples.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bananas (1 lb)",
+    "category": "Produce",
+    "Schnucks": 0.69,
+    "Dierbergs": 0.59,
+    "Kroger": 0.75,
+    "image": "/images/bananas.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Oranges (1 lb)",
+    "category": "Produce",
+    "Schnucks": 1.29,
+    "Dierbergs": 1.19,
+    "Kroger": 1.39,
+    "image": "/images/oranges.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Strawberries (1 lb)",
+    "category": "Produce",
+    "Schnucks": 3.49,
+    "Dierbergs": 3.19,
+    "Kroger": 3.69,
+    "image": "/images/strawberries.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Blueberries (6 oz)",
+    "category": "Produce",
+    "Schnucks": 2.99,
+    "Dierbergs": 2.79,
+    "Kroger": 3.09,
+    "image": "/images/blueberries.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Lettuce (1 head)",
+    "category": "Produce",
+    "Schnucks": 1.49,
+    "Dierbergs": 1.29,
+    "Kroger": 1.59,
+    "image": "/images/lettuce.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Spinach (10 oz)",
+    "category": "Produce",
+    "Schnucks": 2.49,
+    "Dierbergs": 2.29,
+    "Kroger": 2.59,
+    "image": "/images/spinach.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Broccoli (1 lb)",
+    "category": "Produce",
+    "Schnucks": 1.99,
+    "Dierbergs": 1.89,
+    "Kroger": 2.19,
+    "image": "/images/broccoli.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Carrots (1 lb)",
+    "category": "Produce",
+    "Schnucks": 0.99,
+    "Dierbergs": 0.89,
+    "Kroger": 1.09,
+    "image": "/images/carrots.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Tomatoes (1 lb)",
+    "category": "Produce",
+    "Schnucks": 2.29,
+    "Dierbergs": 2.09,
+    "Kroger": 2.39,
+    "image": "/images/tomatoes.jpg"
+  },
+
+  {
+    "id": 11,
+    "name": "Chicken Breast (1 lb)",
+    "category": "Meat",
+    "Schnucks": 4.99,
+    "Dierbergs": 4.79,
+    "Kroger": 5.29,
+    "image": "/images/chickenbreast.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Ground Beef (1 lb)",
+    "category": "Meat",
+    "Schnucks": 5.49,
+    "Dierbergs": 5.19,
+    "Kroger": 5.59,
+    "image": "/images/groundbeef.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Pork Chops (1 lb)",
+    "category": "Meat",
+    "Schnucks": 4.29,
+    "Dierbergs": 3.99,
+    "Kroger": 4.49,
+    "image": "/images/porkchops.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Bacon (12 oz)",
+    "category": "Meat",
+    "Schnucks": 5.99,
+    "Dierbergs": 5.49,
+    "Kroger": 6.19,
+    "image": "/images/bacon.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Sausages (1 lb)",
+    "category": "Meat",
+    "Schnucks": 4.49,
+    "Dierbergs": 4.29,
+    "Kroger": 4.79,
+    "image": "/images/sausages.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Salmon Fillet (1 lb)",
+    "category": "Seafood",
+    "Schnucks": 9.99,
+    "Dierbergs": 9.49,
+    "Kroger": 10.29,
+    "image": "/images/salmon.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Shrimp (1 lb)",
+    "category": "Seafood",
+    "Schnucks": 8.99,
+    "Dierbergs": 8.49,
+    "Kroger": 9.19,
+    "image": "/images/shrimp.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Tilapia (1 lb)",
+    "category": "Seafood",
+    "Schnucks": 6.99,
+    "Dierbergs": 6.59,
+    "Kroger": 7.09,
+    "image": "/images/tilapia.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Tuna (can)",
+    "category": "Seafood",
+    "Schnucks": 1.79,
+    "Dierbergs": 1.59,
+    "Kroger": 1.89,
+    "image": "/images/tuna.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Crab Meat (8 oz)",
+    "category": "Seafood",
+    "Schnucks": 6.49,
+    "Dierbergs": 5.99,
+    "Kroger": 6.79,
+    "image": "/images/crab.jpg"
+  },
+
+  {
+    "id": 21,
+    "name": "Milk (1 gallon)",
+    "category": "Dairy",
+    "Schnucks": 3.49,
+    "Dierbergs": 3.19,
+    "Kroger": 3.59,
+    "image": "/images/milk.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Eggs (dozen)",
+    "category": "Dairy",
+    "Schnucks": 2.79,
+    "Dierbergs": 2.59,
+    "Kroger": 2.99,
+    "image": "/images/eggs.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Butter (1 lb)",
+    "category": "Dairy",
+    "Schnucks": 4.29,
+    "Dierbergs": 3.99,
+    "Kroger": 4.49,
+    "image": "/images/butter.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Cheddar Cheese (8 oz)",
+    "category": "Dairy",
+    "Schnucks": 3.29,
+    "Dierbergs": 3.09,
+    "Kroger": 3.59,
+    "image": "/images/cheddarcheese.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Yogurt (single)",
+    "category": "Dairy",
+    "Schnucks": 1.09,
+    "Dierbergs": 0.99,
+    "Kroger": 1.19,
+    "image": "/images/yogurt.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Sour Cream (8 oz)",
+    "category": "Dairy",
+    "Schnucks": 1.89,
+    "Dierbergs": 1.69,
+    "Kroger": 1.99,
+    "image": "/images/sourcream.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Cottage Cheese (16 oz)",
+    "category": "Dairy",
+    "Schnucks": 2.99,
+    "Dierbergs": 2.79,
+    "Kroger": 3.19,
+    "image": "/images/cottagecheese.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Whipped Cream (can)",
+    "category": "Dairy",
+    "Schnucks": 2.49,
+    "Dierbergs": 2.29,
+    "Kroger": 2.69,
+    "image": "/images/whippedcream.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Cream Cheese (8 oz)",
+    "category": "Dairy",
+    "Schnucks": 2.59,
+    "Dierbergs": 2.39,
+    "Kroger": 2.79,
+    "image": "/images/creamcheese.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Ice Cream (pint)",
+    "category": "Dairy",
+    "Schnucks": 4.99,
+    "Dierbergs": 4.59,
+    "Kroger": 5.19,
+    "image": "/images/icecream.jpg"
+  },
+
+  {
+    "id": 31,
+    "name": "Bread (loaf)",
+    "category": "Bakery",
+    "Schnucks": 2.49,
+    "Dierbergs": 2.29,
+    "Kroger": 2.69,
+    "image": "/images/bread.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Bagels (6 pack)",
+    "category": "Bakery",
+    "Schnucks": 3.49,
+    "Dierbergs": 3.19,
+    "Kroger": 3.59,
+    "image": "/images/bagels.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Croissants (4 pack)",
+    "category": "Bakery",
+    "Schnucks": 4.49,
+    "Dierbergs": 4.19,
+    "Kroger": 4.79,
+    "image": "/images/croissants.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Muffins (4 pack)",
+    "category": "Bakery",
+    "Schnucks": 3.99,
+    "Dierbergs": 3.59,
+    "Kroger": 4.19,
+    "image": "/images/muffins.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Tortillas (10 pack)",
+    "category": "Bakery",
+    "Schnucks": 2.99,
+    "Dierbergs": 2.69,
+    "Kroger": 3.09,
+    "image": "/images/tortillas.jpg"
+  },
+  {
+    "id": 36,
+    "name": "English Muffins (6 pack)",
+    "category": "Bakery",
+    "Schnucks": 3.29,
+    "Dierbergs": 2.99,
+    "Kroger": 3.49,
+    "image": "/images/englishmuffins.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Donuts (6 pack)",
+    "category": "Bakery",
+    "Schnucks": 4.19,
+    "Dierbergs": 3.89,
+    "Kroger": 4.39,
+    "image": "/images/donuts.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Buns (8 pack)",
+    "category": "Bakery",
+    "Schnucks": 2.79,
+    "Dierbergs": 2.59,
+    "Kroger": 2.99,
+    "image": "/images/buns.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Pie (whole)",
+    "category": "Bakery",
+    "Schnucks": 6.99,
+    "Dierbergs": 6.49,
+    "Kroger": 7.19,
+    "image": "/images/pie.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Cookies (dozen)",
+    "category": "Bakery",
+    "Schnucks": 3.99,
+    "Dierbergs": 3.59,
+    "Kroger": 4.19,
+    "image": "/images/cookies.jpg"
+  },
+
+  {
+    "id": 41,
+    "name": "Rice (2 lb)",
+    "category": "Pantry",
+    "Schnucks": 3.49,
+    "Dierbergs": 3.19,
+    "Kroger": 3.59,
+    "image": "/images/rice.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Pasta (1 lb)",
+    "category": "Pantry",
+    "Schnucks": 1.79,
+    "Dierbergs": 1.59,
+    "Kroger": 1.89,
+    "image": "/images/pasta.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Flour (5 lb)",
+    "category": "Pantry",
+    "Schnucks": 4.49,
+    "Dierbergs": 4.19,
+    "Kroger": 4.79,
+    "image": "/images/flour.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Sugar (4 lb)",
+    "category": "Pantry",
+    "Schnucks": 3.99,
+    "Dierbergs": 3.69,
+    "Kroger": 4.29,
+    "image": "/images/sugar.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Salt (26 oz)",
+    "category": "Pantry",
+    "Schnucks": 0.99,
+    "Dierbergs": 0.79,
+    "Kroger": 1.09,
+    "image": "/images/salt.jpg"
+  },
+  {
+    "id": 46,
+    "name": "Corn (can)",
+    "category": "Pantry",
+    "Schnucks": 1.99,
+    "Dierbergs": 1.49,
+    "Kroger": 1.19,
+    "image": "/images/corn.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Green Beans (can)",
+    "category": "Pantry",
+    "Schnucks": 1.99,
+    "Dierbergs": 1.59,
+    "Kroger": 1.19,
+    "image": "/images/greenbeans.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Chicken Stock",
+    "category": "Pantry",
+    "Schnucks": 3.49,
+    "Dierbergs": 3.19,
+    "Kroger": 3.69,
+    "image": "/images/chickenstock.jpg"
+  },
+  {
+    "id": 49,
+    "name": "Ranch Dressing",
+    "category": "Pantry",
+    "Schnucks": 2.99,
+    "Dierbergs": 2.79,
+    "Kroger": 3.19,
+    "image": "/images/ranch.jpg"
+  },
+  {
+    "id": 50,
+    "name": "Honey (12 oz)",
+    "category": "Pantry",
+    "Schnucks": 4.49,
+    "Dierbergs": 4.19,
+    "Kroger": 4.79,
+    "image": "/images/honey.jpg"
+  },
+
+  {
+    "id": 51,
+    "name": "Chips (bag)",
+    "category": "Snacks",
+    "Schnucks": 3.99,
+    "Dierbergs": 3.69,
+    "Kroger": 4.29,
+    "image": "/images/chips.jpg"
+  },
+  {
+    "id": 52,
+    "name": "Pretzels (bag)",
+    "category": "Snacks",
+    "Schnucks": 2.99,
+    "Dierbergs": 2.79,
+    "Kroger": 3.19,
+    "image": "/images/pretzels.jpg"
+  },
+  {
+    "id": 53,
+    "name": "Popcorn (microwave pack)",
+    "category": "Snacks",
+    "Schnucks": 4.49,
+    "Dierbergs": 4.19,
+    "Kroger": 4.79,
+    "image": "/images/popcorn.jpg"
+  },
+  {
+    "id": 54,
+    "name": "Granola",
+    "category": "Snacks",
+    "Schnucks": 5.49,
+    "Dierbergs": 5.19,
+    "Kroger": 5.59,
+    "image": "/images/granola.jpg"
+  },
+  {
+    "id": 55,
+    "name": "Crackers (box)",
+    "category": "Snacks",
+    "Schnucks": 3.99,
+    "Dierbergs": 3.69,
+    "Kroger": 4.29,
+    "image": "/images/crackers.jpg"
+  },
+  {
+    "id": 56,
+    "name": "Cookies (box)",
+    "category": "Snacks",
+    "Schnucks": 4.79,
+    "Dierbergs": 4.49,
+    "Kroger": 4.99,
+    "image": "/images/cookiesbox.jpg"
+  },
+  {
+    "id": 57,
+    "name": "Nuts (8 oz)",
+    "category": "Snacks",
+    "Schnucks": 6.49,
+    "Dierbergs": 6.19,
+    "Kroger": 6.79,
+    "image": "/images/nuts.jpg"
+  },
+  {
+    "id": 58,
+    "name": "Trail Mix (8 oz)",
+    "category": "Snacks",
+    "Schnucks": 5.49,
+    "Dierbergs": 5.19,
+    "Kroger": 5.69,
+    "image": "/images/trailmix.jpg"
+  },
+  {
+    "id": 59,
+    "name": "Fruit Snacks (10 pack)",
+    "category": "Snacks",
+    "Schnucks": 4.99,
+    "Dierbergs": 4.59,
+    "Kroger": 5.19,
+    "image": "/images/fruitsnaks.jpg"
+  },
+  {
+    "id": 60,
+    "name": "Popcorn (bag)",
+    "category": "Snacks",
+    "Schnucks": 2.99,
+    "Dierbergs": 2.79,
+    "Kroger": 3.09,
+    "image": "/images/popcornbag.jpg"
+  },
+
+  {
+    "id": 61,
+    "name": "Apple Juice (64 oz)",
+    "category": "Beverages",
+    "Schnucks": 3.49,
+    "Dierbergs": 3.19,
+    "Kroger": 3.59,
+    "image": "/images/applejuice.jpg"
+  },
+  {
+    "id": 62,
+    "name": "Orange Juice (64 oz)",
+    "category": "Beverages",
+    "Schnucks": 4.49,
+    "Dierbergs": 4.19,
+    "Kroger": 4.69,
+    "image": "/images/orangejuice.jpg"
+  },
+  {
+    "id": 63,
+    "name": "Cola (2 L)",
+    "category": "Beverages",
+    "Schnucks": 2.19,
+    "Dierbergs": 1.99,
+    "Kroger": 2.39,
+    "image": "/images/cola.jpg"
+  },
+  {
+    "id": 64,
+    "name": "Bottled Water (24 pack)",
+    "category": "Beverages",
+    "Schnucks": 5.49,
+    "Dierbergs": 5.19,
+    "Kroger": 5.69,
+    "image": "/images/bottledwater.jpg"
+  },
+  {
+    "id": 65,
+    "name": "Tea (20 bags)",
+    "category": "Beverages",
+    "Schnucks": 3.29,
+    "Dierbergs": 2.99,
+    "Kroger": 3.49,
+    "image": "/images/tea.jpg"
+  },
+  {
+    "id": 66,
+    "name": "Coffee (12 oz)",
+    "category": "Beverages",
+    "Schnucks": 7.49,
+    "Dierbergs": 6.99,
+    "Kroger": 7.79,
+    "image": "/images/coffee.jpg"
+  },
+  {
+    "id": 67,
+    "name": "Sports Drink (32 oz)",
+    "category": "Beverages",
+    "Schnucks": 1.99,
+    "Dierbergs": 1.79,
+    "Kroger": 2.09,
+    "image": "/images/sportsdrink.jpg"
+  },
+  {
+    "id": 68,
+    "name": "Energy Drink (can)",
+    "category": "Beverages",
+    "Schnucks": 2.49,
+    "Dierbergs": 2.29,
+    "Kroger": 2.69,
+    "image": "/images/energydrink.jpg"
+  },
+  {
+    "id": 69,
+    "name": "Lemonade (64 oz)",
+    "category": "Beverages",
+    "Schnucks": 3.29,
+    "Dierbergs": 2.99,
+    "Kroger": 3.49,
+    "image": "/images/lemonade.jpg"
+  },
+  {
+    "id": 70,
+    "name": "Sparkling Water (6 pack)",
+    "category": "Beverages",
+    "Schnucks": 5.19,
+    "Dierbergs": 4.89,
+    "Kroger": 5.39,
+    "image": "/images/sparklingwater.jpg"
+  },
+
+  {
+    "id": 71,
+    "name": "Soap (bar)",
+    "category": "Household",
+    "Schnucks": 1.49,
+    "Dierbergs": 1.29,
+    "Kroger": 1.59,
+    "image": "/images/soap.jpg"
+  },
+  {
+    "id": 72,
+    "name": "Shampoo (12 oz)",
+    "category": "Household",
+    "Schnucks": 4.99,
+    "Dierbergs": 4.69,
+    "Kroger": 5.19,
+    "image": "/images/shampoo.jpg"
+  },
+  {
+    "id": 73,
+    "name": "Toothpaste (tube)",
+    "category": "Household",
+    "Schnucks": 3.49,
+    "Dierbergs": 3.19,
+    "Kroger": 3.69,
+    "image": "/images/toothpaste.jpg"
+  },
+  {
+    "id": 74,
+    "name": "Toilet Paper (12 pack)",
+    "category": "Household",
+    "Schnucks": 8.99,
+    "Dierbergs": 8.49,
+    "Kroger": 9.19,
+    "image": "/images/toiletpaper.jpg"
+  },
+  {
+    "id": 75,
+    "name": "Paper Towels (6 pack)",
+    "category": "Household",
+    "Schnucks": 7.49,
+    "Dierbergs": 6.99,
+    "Kroger": 7.79,
+    "image": "/images/papertowels.jpg"
+  },
+  {
+    "id": 76,
+    "name": "Dish Soap (16 oz)",
+    "category": "Household",
+    "Schnucks": 2.99,
+    "Dierbergs": 2.79,
+    "Kroger": 3.09,
+    "image": "/images/dishsoap.jpg"
+  },
+  {
+    "id": 77,
+    "name": "Laundry Detergent (64 oz)",
+    "category": "Household",
+    "Schnucks": 9.49,
+    "Dierbergs": 8.99,
+    "Kroger": 9.79,
+    "image": "/images/laundrydetergent.jpg"
+  },
+  {
+    "id": 78,
+    "name": "Trash Bags (20 count)",
+    "category": "Household",
+    "Schnucks": 6.49,
+    "Dierbergs": 6.19,
+    "Kroger": 6.79,
+    "image": "/images/trashbags.jpg"
+  },
+  {
+    "id": 79,
+    "name": "Cleaning Spray (32 oz)",
+    "category": "Household",
+    "Schnucks": 4.99,
+    "Dierbergs": 4.69,
+    "Kroger": 5.29,
+    "image": "/images/cleaningspray.jpg"
+  },
+
+  {
+    "id": 80,
+    "name": "Maple Syrup (12 oz)",
+    "category": "Breakfast",
+    "Schnucks": 7.49,
+    "Dierbergs": 7.19,
+    "Kroger": 7.89,
+    "image": "/images/maplesyrup.jpg"
+  },
+  {
+    "id": 81,
+    "name": "Oatmeal (18 oz)",
+    "category": "Breakfast",
+    "Schnucks": 3.29,
+    "Dierbergs": 2.99,
+    "Kroger": 3.49,
+    "image": "/images/oatmeal.jpg"
+  },
+  {
+    "id": 82,
+    "name": "Granola Bars (6 pack)",
+    "category": "Breakfast",
+    "Schnucks": 4.49,
+    "Dierbergs": 4.19,
+    "Kroger": 4.79,
+    "image": "/images/granolabars.jpg"
+  },
+  {
+    "id": 83,
+    "name": "Cereal (box)",
+    "category": "Breakfast",
+    "Schnucks": 4.99,
+    "Dierbergs": 4.59,
+    "Kroger": 5.19,
+    "image": "/images/cereal.jpg"
+  },
+  {
+    "id": 84,
+    "name": "Pasta Sauce (24 oz)",
+    "category": "Pantry",
+    "Schnucks": 4.59,
+    "Dierbergs": 4.29,
+    "Kroger": 4.99,
+    "image": "/images/pastasauce.jpg"
+  },
+  {
+    "id": 85,
+    "name": "Macaroni (1 lb)",
+    "category": "Pantry",
+    "Schnucks": 1.49,
+    "Dierbergs": 1.29,
+    "Kroger": 1.69,
+    "image": "/images/macaroni.jpg"
+  },
+  {
+    "id": 86,
+    "name": "Canned Beans (15 oz)",
+    "category": "Pantry",
+    "Schnucks": 1.09,
+    "Dierbergs": 0.99,
+    "Kroger": 1.19,
+    "image": "/images/cannedbeans.jpg"
+  },
+  {
+    "id": 87,
+    "name": "Tomato Soup (10.75 oz)",
+    "category": "Pantry",
+    "Schnucks": 1.59,
+    "Dierbergs": 1.39,
+    "Kroger": 1.79,
+    "image": "/images/tomatosoup.jpg"
+  },
+  {
+    "id": 88,
+    "name": "Peanut Butter (16 oz)",
+    "category": "Pantry",
+    "Schnucks": 3.49,
+    "Dierbergs": 3.19,
+    "Kroger": 3.69,
+    "image": "/images/peanutbutter.jpg"
+  },
+  {
+    "id": 89,
+    "name": "Jelly (16 oz)",
+    "category": "Pantry",
+    "Schnucks": 2.99,
+    "Dierbergs": 2.79,
+    "Kroger": 3.19,
+    "image": "/images/jelly.jpg"
+  },
+  {
+    "id": 90,
+    "name": "Olive Oil (16 oz)",
+    "category": "Pantry",
+    "Schnucks": 6.99,
+    "Dierbergs": 6.49,
+    "Kroger": 7.19,
+    "image": "/images/oliveoil.jpg"
+  },
+
+  {
+    "id": 91,
+    "name": "Salsa (16 oz)",
+    "category": "Condiments",
+    "Schnucks": 3.19,
+    "Dierbergs": 2.99,
+    "Kroger": 3.39,
+    "image": "/images/salsa.jpg"
+  },
+  {
+    "id": 92,
+    "name": "Tortilla Chips (12 oz)",
+    "category": "Snacks",
+    "Schnucks": 3.29,
+    "Dierbergs": 2.99,
+    "Kroger": 3.49,
+    "image": "/images/tortillachips.jpg"
+  },
+  {
+    "id": 93,
+    "name": "Hot Sauce (5 oz)",
+    "category": "Condiments",
+    "Schnucks": 2.39,
+    "Dierbergs": 2.19,
+    "Kroger": 2.59,
+    "image": "/images/hotsauce.jpg"
+  },
+  {
+    "id": 94,
+    "name": "Pickles (16 oz)",
+    "category": "Condiments",
+    "Schnucks": 2.99,
+    "Dierbergs": 2.79,
+    "Kroger": 3.19,
+    "image": "/images/pickles.jpg"
+  },
+  {
+    "id": 95,
+    "name": "Vegetable Oil (48 oz)",
+    "category": "Cooking",
+    "Schnucks": 4.49,
+    "Dierbergs": 4.19,
+    "Kroger": 4.79,
+    "image": "/images/vegtableoil.jpg"
+  },
+  {
+    "id": 96,
+    "name": "Vinegar (32 oz)",
+    "category": "Cooking",
+    "Schnucks": 2.29,
+    "Dierbergs": 2.09,
+    "Kroger": 2.49,
+    "image": "/images/vinegar.jpg"
+  },
+  {
+    "id": 97,
+    "name": "Mayonnaise (30 oz)",
+    "category": "Condiments",
+    "Schnucks": 3.99,
+    "Dierbergs": 3.69,
+    "Kroger": 4.19,
+    "image": "/images/mayonnaise.jpg"
+  },
+  {
+    "id": 98,
+    "name": "Ketchup (20 oz)",
+    "category": "Condiments",
+    "Schnucks": 2.49,
+    "Dierbergs": 2.29,
+    "Kroger": 2.79,
+    "image": "/images/ketchup.jpg"
+  },
+  {
+    "id": 99,
+    "name": "Mustard (12 oz)",
+    "category": "Condiments",
+    "Schnucks": 1.99,
+    "Dierbergs": 1.79,
+    "Kroger": 2.29,
+    "image": "/images/mustard.jpg"
+  },
+  {
+    "id": 100,
+    "name": "BBQ Sauce (18 oz)",
+    "category": "Condiments",
+    "Schnucks": 3.59,
+    "Dierbergs": 3.29,
+    "Kroger": 3.89,
+    "image": "/images/bbqsauce.jpg"
+  }
+]
