@@ -1,9 +1,10 @@
 package com.example.Price_Comparison.models;
+import jakarta.persistence.*;
 
 @Entity
 public class ShoppingItem {
 
-    @ID
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

@@ -1,12 +1,13 @@
 package com.example.Price_Comparison.models;
 
+import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
 public class ShoppingList {
 
-    @ID
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
