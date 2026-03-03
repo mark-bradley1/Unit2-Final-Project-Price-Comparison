@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -8,6 +8,7 @@ import ContactPage from "./components/pages/ContactPage";
 import ComparisonPage from "./components/pages/ComparisonPage";
 import CartPage from "./components/pages/CartPage";
 import HomePage from "./components/pages/HomePage";
+import ShoppingListPage from "./components/pages/ShoppintListPage";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -44,6 +45,7 @@ function App() {
             path="/comparison"
             element={<ComparisonPage addToCart={addToCart} />}
           />
+          <Route path="/shopping-list" element={<ShoppingListPage />} />
         </Routes>
       </main>
       <Footer />
