@@ -10,7 +10,6 @@ public class ShoppingItem {
 
     private String name;
     private int quantity;
-    private String store;
     private boolean completed;
 
     @ManyToOne
@@ -39,14 +38,6 @@ public class ShoppingItem {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
-    }
-
-    public String getStore() {
-        return store;
-    }
-
-    public void setStore(String store) {
-        this.store = store;
     }
 
     public boolean isCompleted() {
