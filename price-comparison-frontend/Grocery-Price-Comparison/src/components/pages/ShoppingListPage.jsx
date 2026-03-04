@@ -130,23 +130,19 @@ const ShoppingListPage = () => {
         {validatedItems.map((item) => (
           <li
             key={item.id}
-            style={{
-              color: item.isValid ? "black" : "red",
-              fontWeight: item.isValid ? "normal" : "bold",
-              marginBottom: "8px"
-            }}
+            className={`item-row ${item.isValid ? "valid-item" : "invalid-item"}`}
           >
             {item.name} - Qty: {item.quantity}
 
             {!item.isValid && (
-              <span style={{ marginLeft: "10px" }}>
+              <span className="invalid-message">
                 (Not in master list)
               </span>
             )}
 
             <RemoveBtn
               onClick={() => handleDelete(item.id)}
-              style={{ marginLeft: "10px" }}
+              className="remove-item-btn"
             />
           </li>
         ))}
