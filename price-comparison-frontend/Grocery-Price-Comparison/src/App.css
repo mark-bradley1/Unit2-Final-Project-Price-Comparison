@@ -318,6 +318,16 @@ button:hover:not(#remove-btn):not(:disabled) {
   transition: background 0.3s;
 }
 
+.add-item-btn {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
 .added, .form-submit {
   position: fixed;
   bottom: 20px;

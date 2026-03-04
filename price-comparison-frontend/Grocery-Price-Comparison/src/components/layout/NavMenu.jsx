@@ -15,6 +15,9 @@ const NavMenu = () => {
             <Link className="link" to="/cart">
                 Cart
             </Link>
+            <Link className="link" to="/shopping-list/1">
+                Shopping List
+            </Link>
             <Link className="link" to="/contact">
                 Contact
             </Link>

@@ -46,10 +46,10 @@ public class ShoppingItemController {
 
     // READ
     // @GetMapping without a path means this method will handle GET requests to "/api/items"
-    @GetMapping
-    public List<ShoppingItemDTO> getAllItems() {
+    @GetMapping(params = "shoppingListId")
+    public List<ShoppingItemDTO> getItemsByList(@RequestParam Long shoppingListId) {
         // Fetch all items from the database, convert each to a DTO, and return the list
-        return itemRepository.findAll()
+        return itemRepository.findByShoppingListId(shoppingListId)
                 .stream()
                 .map(this::convertToDTO)
                 .toList();
