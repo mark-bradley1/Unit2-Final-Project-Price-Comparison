@@ -12,9 +12,12 @@ const matchesMasterItem = (shoppingItemName) => {
   return groceryItems.some((masterItem) => {
     const normalizedMasterItemName = normalize(masterItem.name);
 
-    const regex = new RegExp(`\\b${normalizedMasterItemName}\\b`, "i");
+    const escapedShoppingName =
+      normalizedShoppingItemName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-    return regex.test(normalizedShoppingItemName);
+    const regex = new RegExp(`\\b${escapedShoppingName}\\b`, "i");
+
+    return regex.test(normalizedMasterItemName);
   });
 };
 
