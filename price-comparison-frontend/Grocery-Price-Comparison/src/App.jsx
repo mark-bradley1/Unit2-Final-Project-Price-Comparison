@@ -8,7 +8,7 @@ import ContactPage from "./components/pages/ContactPage";
 import ComparisonPage from "./components/pages/ComparisonPage";
 import CartPage from "./components/pages/CartPage";
 import HomePage from "./components/pages/HomePage";
-import ShoppingListPage from "./components/pages/ShoppintListPage";
+import ShoppingListPage from "./components/pages/ShoppingListPage";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -45,7 +45,7 @@ function App() {
             path="/comparison"
             element={<ComparisonPage addToCart={addToCart} />}
           />
-          <Route path="/shopping-list" element={<ShoppingListPage />} />
+          <Route path="/shopping-list/:id" element={<ShoppingListPage />} />
         </Routes>
       </main>
       <Footer />
