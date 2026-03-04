@@ -236,6 +236,26 @@ button:hover:not(#remove-btn):not(:disabled) {
   font-family: "Volkhov", serif;
 }
 
+.item-name-input {
+  border: 3px solid #3c6e71;
+  padding: 5px;
+  border-radius: 6px;
+  outline: none;
+  color: black;
+  font-family: "Volkhov", serif;
+  margin-right: 10px;
+}
+
+.item-quantity-input {
+  border: 3px solid #3c6e71;
+  padding: 5px;
+  border-radius: 6px;
+  outline: none;
+  color: black;
+  font-family: "Volkhov", serif;
+  width: 60px;
+}
+
 /* === Comparison Page === */
 #comp-page {
   background-color: #0e4547;
@@ -326,6 +346,7 @@ button:hover:not(#remove-btn):not(:disabled) {
   padding: 6px 12px;
   cursor: pointer;
   transition: background 0.3s;
+  margin-left: 10px;
 }
 
 .added, .form-submit {

@@ -106,14 +106,14 @@ const ShoppingListPage = () => {
       <h2>Shopping List #{listId}</h2>
 
       <div>
-        <input
+        <input className="item-name-input"
           type="text"
           placeholder="Item name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
 
-        <input
+        <input className="item-quantity-input"
           type="number"
           value={quantity}
           onChange={(e) => setQuantity(Number(e.target.value))}
