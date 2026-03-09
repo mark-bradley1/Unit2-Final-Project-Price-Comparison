@@ -16,8 +16,6 @@ public class ContactForm {
     private String message;
     private LocalDateTime submittedAt;
 
-    @OneToOne(mappedBy = "contactForm", cascade = CascadeType.ALL)
-    private List<ContactForm>  response;
 
     public Long getId() {
         return id;
@@ -67,11 +65,4 @@ public class ContactForm {
         this.submittedAt = submittedAt;
     }
 
-    public List<ContactForm> getResponse() {
-        return response;
-    }
-
-    public void setResponse(List<ContactForm> response) {
-        this.response = response;
-    }
 }
