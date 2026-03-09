@@ -2,7 +2,6 @@ package com.example.Price_Comparison.models;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity
 public class ContactForm {
