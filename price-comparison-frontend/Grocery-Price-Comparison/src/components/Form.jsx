@@ -15,21 +15,43 @@ function Form() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
 
-    setFormSubmit("Thanks for reaching out");
+    try {
+      const response = await fetch("http://localhost:8080/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.contact,
+        }),
+      });
 
-    setFormData({
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      setFormSubmit("Thanks for reaching out!");
+
+      setFormData({
         name: "",
         email: "",
         phone: "",
         contact: "",
-    });
+      });
 
-    setTimeout(() => {
+      setTimeout(() => {
         setFormSubmit("");
-    }, 1500);
+      }, 1500);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setFormSubmit("Something went wrong. Please try again.");
+    }
   }
 
   const isFormValid =
