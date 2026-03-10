@@ -1,6 +1,16 @@
 import RemoveBtn from "../RemoveBtn";
+import { useEffect, useState } from "react";
 
 const CartPage = ({ cart, removeFromCart }) => {
+
+  const [cart, setCart] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/api/cart")
+      .then(res => res.json())
+      .then(data => setCart(data));
+  }, []);
+
   // Group items by store
   const storeGroups = cart.reduce((groups, item) => {
     if (!groups[item.store]) groups[item.store] = [];
