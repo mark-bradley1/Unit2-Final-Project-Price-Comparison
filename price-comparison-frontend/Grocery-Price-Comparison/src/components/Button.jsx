@@ -13,7 +13,7 @@ const Button = ({
       id={id}
       type={type}
       onClick={disabled ? undefined : onClick}
-      className={className}
+      className={`primary-btn ${className || ""}`}
       disabled={disabled}
     >
       {label}
