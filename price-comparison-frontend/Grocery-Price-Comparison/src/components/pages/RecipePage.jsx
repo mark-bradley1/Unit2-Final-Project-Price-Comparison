@@ -36,7 +36,7 @@ const RecipePage = () => {
 
   return (
     <div className="recipe-page">
-      <h1>Carrie's Random Recipe</h1>
+      <h1>Carrie's Recipes</h1>
 
       <h2>{recipe.strMeal}</h2>
 
