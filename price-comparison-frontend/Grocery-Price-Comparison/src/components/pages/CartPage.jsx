@@ -1,6 +1,8 @@
 import RemoveBtn from "../RemoveBtn";
+import { useEffect, useState } from "react";
 
 const CartPage = ({ cart, removeFromCart }) => {
+
   // Group items by store
   const storeGroups = cart.reduce((groups, item) => {
     if (!groups[item.store]) groups[item.store] = [];
