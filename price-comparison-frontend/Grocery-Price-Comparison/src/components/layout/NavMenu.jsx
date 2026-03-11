@@ -19,7 +19,7 @@ const NavMenu = () => {
                 Shopping List
             </Link>
             <Link className="link" to="/recipes">
-                Recipes
+                Carrie's Recipes
             </Link>
             <Link className="link" to="/contact">
                 Contact
