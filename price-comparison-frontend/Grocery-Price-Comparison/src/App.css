@@ -452,6 +452,27 @@ button:hover:not(#remove-btn):not(:disabled) {
   border-radius: 6px;
 }
 
+/* === Recipe Page === */
+.recipe-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.recipe-image {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.ingredients {
+  max-width: 300px;
+}
+
+.ingredients ul {
+  padding-left: 20px;
+}
+
 /* === Contact Form === */
 .container {
   max-width: 700px;
