@@ -26,10 +26,10 @@ public class ShoppingCartController {
 
         for (ShoppingCart item : items) {
             ShoppingCartDTO dto = new ShoppingCartDTO();
-            dto.id = item.getId();
-            dto.name = item.getName();
-            dto.store = item.getStore();
-            dto.price = item.getPrice();
+            item.setId(dto.getId());
+            item.setName(dto.getName());
+            item.setStore(dto.getStore());
+            item.setPrice(dto.getPrice());
             dtos.add(dto);
         }
 
@@ -39,15 +39,21 @@ public class ShoppingCartController {
     // POST add item to cart
     @PostMapping
     public ShoppingCartDTO addToCart(@RequestBody ShoppingCartDTO dto) {
-        ShoppingCart item = new ShoppingCart();
-        item.setName(dto.name);
-        item.setStore(dto.store);
-        item.setPrice(dto.price);
+        ShoppingCart cartItem = new ShoppingCart();
+        cartItem.setName(dto.getName());
+        cartItem.setStore(dto.getStore());
+        cartItem.setPrice(dto.getPrice());
 
-        ShoppingCart saved = cartRepository.save(item);
+        ShoppingCart saved = cartRepository.save(cartItem);
 
-        dto.id = saved.getId();
-        return dto;
+        // Return a DTO with the saved ID
+        ShoppingCartDTO savedDTO = new ShoppingCartDTO();
+        savedDTO.setId(saved.getId());
+        savedDTO.setName(saved.getName());
+        savedDTO.setStore(saved.getStore());
+        savedDTO.setPrice(saved.getPrice());
+
+        return savedDTO;
     }
 
     // DELETE remove item by id

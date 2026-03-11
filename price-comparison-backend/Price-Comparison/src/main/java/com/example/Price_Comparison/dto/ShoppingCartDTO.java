@@ -2,9 +2,40 @@ package com.example.Price_Comparison.dto;
 
 public class ShoppingCartDTO {
 
-    public Long id;
-    public String name;
-    public String store;
-    public Double price;
+    private Long id;
+    private String name;
+    private String store;
+    private Double price;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getStore() {
+        return store;
+    }
+
+    public void setStore(String store) {
+        this.store = store;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 }
