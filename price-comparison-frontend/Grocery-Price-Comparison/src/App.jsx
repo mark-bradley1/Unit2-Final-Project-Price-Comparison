@@ -9,22 +9,25 @@ import ComparisonPage from "./components/pages/ComparisonPage";
 import CartPage from "./components/pages/CartPage";
 import HomePage from "./components/pages/HomePage";
 import ShoppingListPage from "./components/pages/ShoppingListPage";
+import RecipePage from "./components/pages/RecipePage";
 
 function App() {
   const [cart, setCart] = useState([]);
 
   // Fetch cart from backend on page load
+  const fetchCart = async () => {
+    try {
+      const response = await fetch("http://localhost:8080/api/cart");
+      if (!response.ok) throw new Error("Failed to fetch cart");
+
+      const data = await response.json();
+      setCart(data);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   useEffect(() => {
-    const fetchCart = async () => {
-      try {
-        const response = await fetch("http://localhost:8080/api/cart");
-        if (!response.ok) throw new Error("Failed to fetch cart");
-        const data = await response.json();
-        setCart(data);
-      } catch (err) {
-        console.error(err);
-      }
-    };
     fetchCart();
   }, []);
 
@@ -44,15 +47,11 @@ function App() {
         body: JSON.stringify(cartItem),
       });
 
-      if (!response.ok) throw new Error("Failed to add item to cart");
+      if (!response.ok) throw new Error("Failed to add item");
 
-      const savedItem = await response.json(); // returned DTO with id from DB
-      setCart((prev) => [...prev, savedItem]); // update local state
+      await fetchCart(); // refresh cart from database
     } catch (err) {
       console.error(err);
-      alert(
-        "Sorry, there was an issue adding the item to your cart. Please try again.",
-      );
     }
   };
 
@@ -64,7 +63,7 @@ function App() {
 
       if (!response.ok) throw new Error("Failed to remove item");
 
-      setCart((prev) => prev.filter((item) => item.id !== id));
+      await fetchCart(); // refresh cart
     } catch (err) {
       console.error(err);
     }
@@ -87,6 +86,7 @@ function App() {
             element={<ComparisonPage addToCart={addToCart} />}
           />
           <Route path="/shopping-list/:id" element={<ShoppingListPage />} />
+          <Route path="/recipes" element={<RecipePage />} />
         </Routes>
       </main>
       <Footer />
