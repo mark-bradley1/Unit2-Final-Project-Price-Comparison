@@ -103,7 +103,7 @@ To run this project locally, follow the steps below.
 
 ## Wireframes
 - Wireframes for the project can be viewed here:
-    - 
+    - https://www.figma.com/design/zkmhs9KVr4PgBzAdSwnEJG/Unit-1-Final-Project?node-id=0-1&t=jSkJtlF1cdT7nv2t-1
 
 ## Entity Relationshop Diagram (ERD)
 - The database structure for this project can be viewed here:
