@@ -107,7 +107,7 @@ To run this project locally, follow the steps below.
 
 ## Entity Relationshop Diagram (ERD)
 - The database structure for this project can be viewed here:
-    - 
+    - https://lucid.app/lucidchart/314d4c06-1ed8-47a0-a2c0-038e00f448e8/edit?viewport_loc=980%2C-258%2C1663%2C789%2C0_0&invitationId=inv_9d32d43d-7dd1-4b32-91a5-2c05342b0fdf
 
 ## Unsolved Problems
 - While the application is fully functional, there are several improvements that could enhance the user experience:
