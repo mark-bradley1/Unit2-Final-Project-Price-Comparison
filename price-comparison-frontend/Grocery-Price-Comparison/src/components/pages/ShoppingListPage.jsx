@@ -101,6 +101,22 @@ const ShoppingListPage = () => {
     }
   };
 
+  const updateItem = async (item) => {
+    try {
+      await fetch(`http://localhost:8080/api/items/${item.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(item),
+      });
+
+      fetchItems();
+    } catch (error) {
+      console.error("Error updating item:", error);
+    }
+  }
+
   return (
     <div>
       <h2>Shopping List #{listId}</h2>
@@ -139,6 +155,27 @@ const ShoppingListPage = () => {
                 (Not in master list)
               </span>
             )}
+
+            <Button
+              label="+1"
+              onClick={() => 
+                updateItem({
+                  ...item,
+                  quantity: item.quantity + 1,
+                })
+              }
+            />
+
+            <Button
+              label="-1"
+              onClick={() => 
+                updateItem({
+                  ...item,
+                  quantity: item.quantity - 1,
+                })
+              }
+              disabled={item.quantity <= 1}
+            />
 
             <RemoveBtn
               onClick={() => handleDelete(item.id)}
