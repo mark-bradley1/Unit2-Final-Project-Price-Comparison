@@ -26,10 +26,10 @@ public class ShoppingCartController {
 
         for (ShoppingCart item : items) {
             ShoppingCartDTO dto = new ShoppingCartDTO();
-            item.setId(dto.getId());
-            item.setName(dto.getName());
-            item.setStore(dto.getStore());
-            item.setPrice(dto.getPrice());
+            dto.setId(item.getId());
+            dto.setName(item.getName());
+            dto.setStore(item.getStore());
+            dto.setPrice(item.getPrice());
             dtos.add(dto);
         }
 
