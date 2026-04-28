@@ -19,7 +19,7 @@ function Form() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://price-comparison-backend.railway.internal/api/contact", {
+      const response = await fetch("https://price-comparison-production-backend.up.railway.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
