@@ -15,10 +15,17 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
+
         config.setAllowCredentials(true);
-        config.setAllowedOriginPatterns(List.of("http://localhost:5173"));
-        config.addAllowedMethod("*");
+
+        config.setAllowedOriginPatterns(List.of(
+                "http://localhost:5173",
+                "https://grocery-price-comparison-nine.vercel.app"
+        ));
+
         config.addAllowedHeader("*");
+        config.addAllowedMethod("*");
+
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
     }
