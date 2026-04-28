@@ -17,7 +17,7 @@ function App() {
   // Fetch cart from backend on page load
   const fetchCart = async () => {
     try {
-      const response = await fetch("https://price-comparison-backend.railway.app/api/cart");
+      const response = await fetch("https://price-comparison-backend.railway.internal/api/cart");
       if (!response.ok) throw new Error("Failed to fetch cart");
 
       const data = await response.json();
@@ -41,7 +41,7 @@ function App() {
     };
 
     try {
-      const response = await fetch("https://price-comparison-backend.railway.app/api/cart", {
+      const response = await fetch("https://price-comparison-backend.railway.internal/api/cart", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(cartItem),
@@ -57,7 +57,7 @@ function App() {
 
   const removeFromCart = async (id) => {
     try {
-      const response = await fetch(`https://price-comparison-backend.railway.app/api/cart/${id}`, {
+      const response = await fetch(`https://price-comparison-backend.railway.internal/api/cart/${id}`, {
         method: "DELETE",
       });
 
