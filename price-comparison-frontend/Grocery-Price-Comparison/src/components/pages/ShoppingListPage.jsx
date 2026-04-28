@@ -38,7 +38,7 @@ const ShoppingListPage = () => {
   const fetchItems = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/items?shoppingListId=${listId}`,
+        `https://price-comparison-backend.railway.app/api/items?shoppingListId=${listId}`,
       );
 
       const data = await response.json();
@@ -72,7 +72,7 @@ const ShoppingListPage = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/items", {
+      const response = await fetch("https://price-comparison-backend.railway.app/api/items", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +92,7 @@ const ShoppingListPage = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:8080/api/items/${id}`, {
+      await fetch(`https://price-comparison-backend.railway.app/api/items/${id}`, {
         method: "DELETE",
       });
       setItems(items.filter((item) => item.id !== id));
@@ -103,7 +103,7 @@ const ShoppingListPage = () => {
 
   const updateItem = async (item) => {
     try {
-      await fetch(`http://localhost:8080/api/items/${item.id}`, {
+      await fetch(`https://price-comparison-backend.railway.app/api/items/${item.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
