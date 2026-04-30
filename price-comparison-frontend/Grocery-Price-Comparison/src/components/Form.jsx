@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "./Button";
 
 function Form() {
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
   const [formSubmit, setFormSubmit] = useState("");
   const [formData, setFormData] = useState({
     name: "",
@@ -19,7 +20,7 @@ function Form() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://price-comparison-production-backend.up.railway.app/api/contact", {
+      const response = await fetch(`${API_BASE_URL}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

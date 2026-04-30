@@ -4,6 +4,8 @@ import groceryItems from "../data/groceryItems.json";
 import RemoveBtn from "../RemoveBtn";
 import Button from "../Button";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 const normalize = (text) => text.trim().toLowerCase();
 
 const matchesMasterItem = (shoppingItemName) => {
@@ -38,7 +40,7 @@ const ShoppingListPage = () => {
   const fetchItems = async () => {
     try {
       const response = await fetch(
-        `https://price-comparison-production-backend.up.railway.app/api/items?shoppingListId=${listId}`,
+        `${API_BASE_URL}/api/items?shoppingListId=${listId}`,
       );
 
       const data = await response.json();
@@ -72,7 +74,7 @@ const ShoppingListPage = () => {
     };
 
     try {
-      const response = await fetch("https://price-comparison-production-backend.up.railway.app/api/items", {
+      const response = await fetch(`${API_BASE_URL}/api/items`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +94,7 @@ const ShoppingListPage = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`https://price-comparison-production-backend.up.railway.app/api/items/${id}`, {
+      await fetch(`${API_BASE_URL}/api/items/${id}`, {
         method: "DELETE",
       });
       setItems(items.filter((item) => item.id !== id));
@@ -103,7 +105,7 @@ const ShoppingListPage = () => {
 
   const updateItem = async (item) => {
     try {
-      await fetch(`https://price-comparison-production-backend.up.railway.app/api/items/${item.id}`, {
+      await fetch(`${API_BASE_URL}/api/items/${item.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
